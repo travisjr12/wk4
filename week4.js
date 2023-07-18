@@ -58,6 +58,12 @@ for (let i = 0; i < names.length; i++) {
 }
 //should be [3,5,3,5,4,3]
 console.log(nameLengths);
+//adding the sum of all the lengths of names in the string array
+var sum = 0;
+for (var i = 0; i < nameLengths.length; i++) {
+  sum += nameLengths[i];
+}
+console.log(sum)
 //uses any word n number of times to concatenate  
 function concatenateWord(word, n) {
   return word.repeat(n);
